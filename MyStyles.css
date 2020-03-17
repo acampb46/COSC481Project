@@ -1,34 +1,28 @@
-img.center {
-  display: block;
-  margin: 0 auto;
+.navbar_logo {
+    height: 60px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #6bc5ff;
+.main_color {
+    background-color: #95D4FD;
 }
 
-li {
-  float: left;
+a {
+    color: rgb(30, 30, 30) !important;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+body {
+    color: rgb(30, 30, 30);
+    background-color: #95D4FD;
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-/* Change the link color to #57bdff on hover */
-li a:hover {
-  background-color: #57bdff;
+main {
+    flex: 1 0 auto;
 }
 
-/* Change the navigation bar button to #57bdff when on that page */
 .active {
-  background-color: #57bdff;
+    background-color: #7CBBE4
 }
