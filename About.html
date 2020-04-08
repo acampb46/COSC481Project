@@ -1,80 +1,162 @@
 <!DOCTYPE html>
 <html>
 
-   <!--MATERIALIZE CSS LIBRARY-->
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--MATERIALIZE CSS LIBRARY-->
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-   <!-- Compiled and minified JavaScript -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
 
-   <!-- Created by Zachary Aebersold, Chad Banfield, Ashlee Campbell, Ben Sanda, and Kyle Stevenson-->
 
-   <link rel="stylesheet" type="text/css" href="MyStyles.css">
 
-   <head>
-      <title>About Us</title>
-   </head>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 
-   <body style="background-color:#95d4fd">
-      <div id="page-container">
-         <div id="content-wrap">
+<!-- Created by Zachary Aebersold, Chad Banfield, Ashlee Campbell, Ben Sanda, and Kyle Stevenson-->
+
+<link rel="stylesheet" type="text/css" href="MyStyles.css">
+
+<head>
+    <title>About Us</title>
+</head>
+
+<body style="background-color:#95d4fd">
+    <div id="page-container">
+        <div id="content-wrap">
 
             <!-- NAVBAR -->
             <nav class=" z-depth-1">
-               <div class="nav-wrapper main_color">
-                  <div class="container">
-                     <a href="Home.html" class="brand-logo"><img src="Logo.png" alt="Perfect Paws" class="navbar_logo" /></a>
-                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a class="" href="Home.html">Home</a></li>
-                        <li><a class="active" href="About.html">About Us</a></li>
-                        <li><a class="" href="Location.html">Location</a></li>
-                        <li><a class="" href="Pricing.html">Pricing</a></li>
-                        <li><a class="" href="Special.html">Specials</a></li>
-                        <li><a class="" href="Testimonials.html">Testimonials</a></li>
-                        <li><a class="" href="Subscribe.html">Subscribe</a></li>
-                        <li><a class="" href="Contact.html">Contact Us</a></li>
-                        <li><a href="https://www.facebook.com/pg/perfectpawsofplymouth/photos/?ref=page_internal" target="_blank">Gallery</a></li>
-                     </ul>
-                  </div>
-               </div>
+                <div class="nav-wrapper main_color">
+                    <div class="container">
+                        <a href="index.html" class="brand-logo"><img src="Logo.png" alt="Perfect Paws" class="navbar_logo" /></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a class="" href="index.html">Home</a></li>
+                            <li><a class="active" href="About.html">About</a></li>
+                            <li><a class="" href="Contact.html">Contact</a></li>
+                            <li><a href="https://www.facebook.com/pg/perfectpawsofplymouth/photos/?ref=page_internal" target="_blank">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+            <!-- BODY -->
+            <main>
 
-            <h1 style="text-align:center;">About Us</h1>
-            <p>Established in 2001, Perfect Paws has the experience and customer service to provide the Plymouth area with most professional pet care services. We treat your pet as our own and it shows. Whether you make regular grooming appointments,
-               or
-               need an immediate de-skunking, we have what it takes to send you and your 4-legged family member home happy. All breeds are welcome, no matter how big or small.</p>
-            Cats are also welcome! </p>
+                <div class="container">
+                    <h1 style="text-align:center;">About</h1>
+
+
+                    <div class="row">
+                        <div class="col s12 l6">
+                            <h3 class="center">Pricing</h3>
+
+                            <p>Prices start at</p>
+                            <ul class=>
+                                <li>
+                                    <p>Small: $48+</p>
+                                </li>
+                                <li>
+                                    <p>Medium: $55+</p>
+                                </li>
+                                <li>
+                                    <p>Larger: $60+</p>
+                                </li>
+                                <li>
+                                    <p>De-Matting</p>
+                                </li>
+                                <li>
+                                    <p>Bath: $30+</p>
+                                </li>
+                                <li>
+                                    <p>De-Skunking: $30+</p>
+                                </li>
+                                <li>
+                                    <p>Untangling</p>
+                                </li>
+                                <li>
+                                    <p>Nail Clipping: $20</p>
+                                </li>
+                                <li>
+                                    <p>Cats: $100+</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col s12 l6">
+                            <h3 class="center">Location</h3>
+
+                            <p>We are located in the center of the Charlestown Square complex off Main St. Just north of Penniman, south of the railroad tracks.</p>
+                            <p>263 N Main St, Plymouth, MI 48170</p>
+                            <div class="row">
+                                <div class="col s12 l6 offset-s2">
+                                    <img class="" width="300" src="storefront.jpg">
+                                </div>
+                                <div class="col s12 l6 offset-s2">
+                                    <div id='map' style='width: 300px; height: 226.5px;'></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+            </main>
+            </div>
 
             <!-- FOOTER -->
             <footer id="footer" class="page-footer grey darken-4">
-               <div class="container">
-                  <div class="row">
-                     <div class="col l6 s12">
-                        <h5 class="white-text">Contact</h5>
-                        <ul>
-                           <li>Phone: 734.453.1660</li>
-                           <li>Email: perfectpaws263@gmail.com</li>
-                        </ul>
-                     </div>
-                     <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">Hours</h5>
-                        <ul>
-                           <li>Monday - Friday: 9am-5pm
-                           </li>
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">Contact</h5>
+                            <ul>
+                                <li>Phone: 734-453-1660</li>
+                                <li>Email: perfectpaws263@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="white-text">Hours</h5>
+                            <ul>
+                                <li>Monday - Friday: 9am-5pm
+                                </li>
 
-                           <li>Saturday: 8:30am-5pm
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
+                                <li>Saturday: 8:30am-5pm
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </footer>
 
-         </div>
-      </div>
-   </body>
+        </div>
+    </div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY2JhbmZpZWwiLCJhIjoiY2s4ZzMxdHlsMDBzODNkb2RxN24wZjBtYSJ9.P_7UUQjVXz_PC1a24H_g7g';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-83.464447, 42.374611],
+            zoom: 13
+        });
+        new mapboxgl.Marker().setLngLat([-83.464447, 42.374611]).addTo(map);
+        map.addControl(new mapboxgl.NavigationControl());
+    </script>
+
+
+</body>
+
+<script>
+</script>
 
 </html>
