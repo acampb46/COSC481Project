@@ -9,7 +9,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- Created by Zachary Aebersold, Chad Banfield, Ashlee Campbell, Ben Sanda, and Kyle Stevenson-->
 
 <link rel="stylesheet" type="text/css" href="MyStyles.css">
@@ -27,10 +28,21 @@
                 <div class="nav-wrapper main_color">
                     <div class="container">
                         <a href="index.html" class="brand-logo"><img src="Logo.png" alt="Perfect Paws" class="navbar_logo" /></a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                            <i class="material-icons">menu</i>
+                        </a>
+
+                        <ul class="hide-on-med-and-down right">
                             <li><a class="" href="index.html">Home</a></li>
                             <li><a class="" href="About.html">About</a></li>
-                            <li><a class="active" href="Contact.html">Contact</a></li>
+                            <li><a class="" href="Contact.html">Contact</a></li>
+                            <li><a href="https://www.facebook.com/pg/perfectpawsofplymouth/photos/?ref=page_internal" target="_blank">Gallery</a></li>
+                        </ul>
+
+                        <ul class="sidenav" id="mobile-menu">
+                            <li><a class="" href="index.html">Home</a></li>
+                            <li><a class="" href="About.html">About</a></li>
+                            <li><a class="" href="Contact.html">Contact</a></li>
                             <li><a href="https://www.facebook.com/pg/perfectpawsofplymouth/photos/?ref=page_internal" target="_blank">Gallery</a></li>
                         </ul>
                     </div>
@@ -58,14 +70,14 @@
             <footer id="footer" class="page-footer grey darken-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col l6 s12">
+                        <div class="col l6 s6">
                             <h5 class="white-text">Contact</h5>
                             <ul>
                                 <li>Phone: 734-453-1660</li>
                                 <li>Email: perfectpaws263@gmail.com</li>
                             </ul>
                         </div>
-                        <div class="col l4 offset-l2 s12">
+                        <div class="col l4 offset-l2 s6">
                             <h5 class="white-text">Hours</h5>
                             <ul>
                                 <li>Monday - Friday: 9am-5pm
@@ -82,5 +94,8 @@
         </div>
     </div>
 </body>
+<script>
+    M.AutoInit();
+</script>
 
 </html>
